@@ -1,16 +1,36 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+:root {
+  --primary:#274B36;
+  --secondary:#EF7420;
+  --terciary:#81968A;
+  --grey: #F4F9F9;
+  --black: #000;
+  --white:#eee;
+  --titlesFont:"Raleway", sans-serif, impact;
+  --textFont:"Montserrat",sans-serif, impact
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: var(--textFont);
+
+}
+
+[class*="container"] {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 95%;
+}
+
+[class*="heading"] {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 5rem 0;
+  color: var(--primary);
+  font-family: var(--titlesFont);
+  text-transform: uppercase;
 }
