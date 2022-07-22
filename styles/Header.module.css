@@ -1,12 +1,15 @@
 .header{
     background-color: transparent;
     z-index: 1;
-   position: fixed; 
     font-size: 4rem;
     padding: 1rem 2rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-image: linear-gradient(to right bottom, rgba(39, 75, 54, .85), rgba(39, 75, 54, .99)
+    ), url(../public/img/grey-gdccef0896_640.png);
+    background-size: cover;
+    background-position: 50%;
 }
 
 .logo{
