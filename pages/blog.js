@@ -1,9 +1,19 @@
+import styles from "../styles/Blog.module.css"
 import Layout from "../components/Layout"
+import BlogEntry from "../components/BlogEntry"
 
 const Blog = () => {
   return (
     <Layout page="blog">
-        <div>desde el blog</div>
+        <main className="container">
+          <h2 className="heading">Blog</h2>
+          <div className={styles.blog}>
+            <BlogEntry/>
+            <BlogEntry/>
+            <BlogEntry/>
+            <BlogEntry/>
+          </div>
+        </main>
     </Layout>
 
   )
