@@ -9,9 +9,6 @@ const Blog = () => {
           <h2 className="heading">Blog</h2>
           <div className={styles.blog}>
             <BlogEntry/>
-            <BlogEntry/>
-            <BlogEntry/>
-            <BlogEntry/>
           </div>
         </main>
     </Layout>
