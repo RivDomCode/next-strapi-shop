@@ -4,7 +4,6 @@ import BlogEntry from "../components/BlogEntry"
 
 const Blog = ( {blogEntries} ) => {
 
-  console.log(blogEntries)
 
   return (
     <Layout page="blog">
@@ -26,7 +25,7 @@ const Blog = ( {blogEntries} ) => {
 
 //get data from backend with getServerSideProps
 export async function getServerSideProps() {
-  const url ="http://localhost:1337/blogs";
+  const url =`${process.env.API_URL}/blogs`;
   const apiresponse = await fetch(url);
   const blogEntries = await apiresponse.json()
   return {
