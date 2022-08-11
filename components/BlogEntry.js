@@ -3,14 +3,15 @@ import Link from "next/link";
 import styles from "../styles/BlogEntry.module.css";
 
 
-const BlogEntry = () => {
+const BlogEntry = ( {blogEntry} ) => {
+  const { images, title, resume, published_at} = blogEntry
   return (
     <article className={styles.blogEntry}>
-        <Image layout='responsive' height={140} width={160} src="/img/aboutUs.jpg" alt="blog pic"/>
+        <Image layout='responsive' height={140} width={160} src={images.url} alt="blog pic"/>
         <div className={styles.content}>
-          <h3 className={styles.title}>Titulo del post</h3>
-          <p className={styles.date}>Fecha del post</p>
-          <p className={styles.resume}>Resumen del post</p>
+          <h3 className={styles.title}>{title}</h3>
+          <p className={styles.date}>{published_at}</p>
+          <p className={styles.resume}>{resume}</p>
           <Link href="#">Read more</Link>
         </div>
     </article>

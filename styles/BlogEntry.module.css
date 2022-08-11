@@ -17,9 +17,9 @@
 }
 
 .date{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    font-weight: 500;
     color: var(--terciary);
-
 }
 
 .resume{
@@ -27,7 +27,7 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
-   font-size: 2.4rem;
+   font-size: 1.8rem;
 }
 
 .content a{
