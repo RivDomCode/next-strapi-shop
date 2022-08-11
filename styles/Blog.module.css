@@ -1,7 +1,7 @@
 .blog{
     display: grid;
     gap: 4rem;
-    
+    min-height: 100%;
 }
 
 @media(min-width:768px){

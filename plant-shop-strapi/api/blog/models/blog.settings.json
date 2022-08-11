@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
-    "name": "Blog",
+    "name": "blog",
     "description": ""
   },
   "options": {
@@ -12,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Resume": {
-      "type": "text",
+    "resume": {
+      "type": "string",
       "required": true
     },
-    "Image": {
+    "images": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
