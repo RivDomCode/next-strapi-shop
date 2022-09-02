@@ -33,6 +33,10 @@
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

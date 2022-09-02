@@ -52,3 +52,16 @@
     background-color: var(--primary);
     color: var(--white);
 }
+
+/* .blogEntry detail */
+
+.detail{
+    max-width: 80rem;
+    margin: 0 auto;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.textContent{
+    white-space:pre-wrap;
+}

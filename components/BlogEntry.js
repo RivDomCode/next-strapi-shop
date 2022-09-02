@@ -6,7 +6,8 @@ import styles from "../styles/BlogEntry.module.css";
 
 const BlogEntry = ( {blogEntry} ) => {
 
-  const { images, title, resume, published_at,id} = blogEntry
+  const { images, title, resume, published_at,id, url} = blogEntry;
+
 
   return (
     <article className={styles.blogEntry}>
@@ -15,7 +16,7 @@ const BlogEntry = ( {blogEntry} ) => {
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.date}>{formatDate(published_at)}</p>
           <p className={styles.resume}>{resume}</p>
-          <Link href={`/blog/${id}`}>Read more</Link>
+          <Link href={`/blog/${url}`}>Read more</Link>
         </div>
     </article>
   )

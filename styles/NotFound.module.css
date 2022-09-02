@@ -1,0 +1,15 @@
+.notFound{
+    height: 78rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.notFound a{
+    font-size: 2rem;
+    color:var(--secondary);
+    font-weight: bold;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}

@@ -7,7 +7,7 @@
     padding: 1rem 3rem;
     text-align: center;
     letter-spacing: .2rem;
-    height:9rem
+    height:100%
 }
 
 .firstP{
@@ -29,4 +29,14 @@
     color: var(--secondary);
     font-weight: 500;
     font-size: 2rem;
+}
+
+@media(max-width:868px){
+    .firstP, .secondP{
+        font-size: 1.5rem;
+    }
+
+    .secondP a{
+        font-size: 1.7rem;
+    }
 }
