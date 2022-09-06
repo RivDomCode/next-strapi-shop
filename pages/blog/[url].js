@@ -5,13 +5,10 @@ import styles from "../../styles/BlogEntry.module.css"
 
 const BlogEntryContent = ( { blogEntryContent } ) => {
 
-    console.log(blogEntryContent)
-
 const { content, images, published_at, title} = blogEntryContent;
-console.log(content)
 
   return (
-    <Layout>
+    <Layout page={title}>
     <main className='container'>
         <h1 className='heading'>{title}</h1>
         <article className={styles.detail}>

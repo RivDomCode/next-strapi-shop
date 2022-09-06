@@ -15,14 +15,18 @@ export default function Home() {
           </p>
           <p className={styles.secondaryText}>
             All kinds of plants or tools for every environment delivered from
-            our awesome facilites directly to yor home
+            our awesome facilites directly to your home
           </p>
           <button className={styles.heroBtn}>
             <Link href="shop">Start shopping</Link>
           </button>
         </div>
 
-        <div className={styles.heroImg}></div>
+        <div className={styles.heroImg}>
+
+        </div>
+
+
       </main>
       <HomeBody/>
     </Layout>

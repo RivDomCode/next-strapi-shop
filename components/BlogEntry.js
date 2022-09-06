@@ -9,6 +9,7 @@ const BlogEntry = ( {blogEntry} ) => {
   const { images, title, resume, published_at,id, url} = blogEntry;
 
 
+
   return (
     <article className={styles.blogEntry}>
         <Image layout='responsive' height={140} width={160} src={images.url} alt="blog pic"/>

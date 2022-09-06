@@ -1,12 +1,40 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
+import ShopArticle from '../components/ShopArticle';
+import styles  from "../styles/Shop.module.css"
 
-const Shop = () => {
+const Shop = ( {shopArticles} ) => {
+
+  console.log(shopArticles)
+
   return (
     <Layout page="shop">
-        <div>Shop</div>
+      <main className="container">
+        <h2 className="heading">
+          OUR PLANT SELeCTION
+        </h2>
+        <div className={styles.shop}>
+          {
+            shopArticles.map(shopArticle => (
+              <ShopArticle key={shopArticle.id} shopArticle={shopArticle}/>
+            ))
+          }
+        </div>
+        <p>Photos for this part of project Courtesy of Proven Winners - www.provenwinners.com</p>
+      </main>
     </Layout>
   )
 }
 
-export default Shop
+export async function getServerSideProps() {
+  const url =`${process.env.API_URL}/plants`;
+  const apiresponse = await fetch(url);
+  const shopArticles = await apiresponse.json();
+
+  return {
+    props:{
+      shopArticles
+    }
+  }
+}
+
+export default Shop;
