@@ -30,6 +30,11 @@
    font-size: 1.8rem;
 }
 
+.viewProductContainer{
+    display: flex;
+    justify-content: center;
+}
+
 .content a{
     text-decoration: none;
     margin-top: 2rem;

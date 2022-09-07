@@ -1,6 +1,6 @@
 .shop{
     display: grid;
-    gap: 4rem;
+    gap: 6rem;
     min-height: 100%;
     margin-bottom: 2rem;
 }

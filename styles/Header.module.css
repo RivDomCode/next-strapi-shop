@@ -51,3 +51,10 @@
 .linkPages a:hover{
     color: var(--secondary);
 }
+
+
+@media(min-width: 1286px) {
+    .header{
+        padding: 1rem 35rem;
+    }
+}
