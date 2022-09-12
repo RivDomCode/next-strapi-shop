@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 5rem 12rem;
+    min-height: 75vh;
 }
 
 

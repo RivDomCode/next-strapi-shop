@@ -16,3 +16,9 @@
       grid-template-columns:repeat(3, 1fr);
      }
   }
+
+  .attribution{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 4rem 0 2rem 0;
+  }

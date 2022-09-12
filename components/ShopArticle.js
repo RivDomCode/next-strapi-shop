@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ShopArticle = ( { shopArticle } ) => {
 
-    const { description, name, price, plantimage } = shopArticle;
+    const { description, name, price, plantimage, url } = shopArticle;
 
     const [ plantimageUrl ] = plantimage;
 
@@ -18,7 +18,7 @@ const ShopArticle = ( { shopArticle } ) => {
         <p className={styles.description}>{description}€</p>
         <p className={styles.price}>{price}€</p>
         <div className={styles.viewProductContainer}>
-          <Link href="#">View Product</Link>
+          <Link href={`/plants/${url}`}>View Product</Link>
         </div>
     </article>
   )

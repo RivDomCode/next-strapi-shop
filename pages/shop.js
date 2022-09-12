@@ -19,7 +19,7 @@ const Shop = ( {shopArticles} ) => {
             ))
           }
         </div>
-        <p>Photos for this part of project Courtesy of Proven Winners - www.provenwinners.com</p>
+        <p className={styles.attribution}>Photos for this part of this project Courtesy of Proven Winners - www.provenwinners.com</p>
       </main>
     </Layout>
   )
