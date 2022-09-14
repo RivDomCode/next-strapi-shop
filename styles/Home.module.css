@@ -1,14 +1,13 @@
 /* Hero section */
 .home{
-    height:63vh;
+    height:57vh;
     display: flex;
     flex-direction: row;
-max-width: 190rem;
+    max-width: 190rem;
     box-shadow: 1px 1px 3px lightgray;
     background-image: linear-gradient(to right bottom, rgba(39, 75, 54, .85), rgba(39, 75, 54, .99)
     ), url(../public/img/grey-gdccef0896_640.png);
     background-size: cover;
-
     margin: 0 auto;
     margin-top: 2rem;
 }

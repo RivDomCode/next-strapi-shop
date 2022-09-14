@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Carrousel from "../components/Carrousel";
 import HomeBody from "../components/HomeBody";
 import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
@@ -25,9 +26,8 @@ export default function Home() {
         <div className={styles.heroImg}>
 
         </div>
-
-
       </main>
+      <Carrousel/>
       <HomeBody/>
     </Layout>
   );
