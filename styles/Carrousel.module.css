@@ -8,7 +8,7 @@
     position: absolute;
     color:var(--primary);
     font-size: 5rem;
-    top: 40%;
+    top: 50%;
     left: 2%;
     z-index: 10;
     cursor: pointer;
@@ -18,23 +18,30 @@
     position: absolute;
     color:var(--primary);
     font-size: 5rem;
-    top: 40%;
+    top: 50%;
     right: 2%;
     z-index: 10;
     cursor: pointer;
 }
 
+.leftArrow, .rightArrow:hover{
+    color: var(--terciary);
+}
+
 /* Carrousel Slides */
 
 .slide{
-
     width: 80vw;
-    display: flex;
     flex-direction: column;
+    display: flex;
     margin: 0 auto;
     margin-bottom: 8rem;
     position: relative;
     color: var(--white);
+}
+
+.active{
+    display: block;
 }
 
 .slide img{
@@ -42,6 +49,7 @@
     box-shadow: 1rem 1rem 5rem var(--grey);
     filter: grayscale(.8) brightness(55%);
     transition: filter .3s linear;
+    background-color: transparent;
 }
 
 .slide img:hover{
