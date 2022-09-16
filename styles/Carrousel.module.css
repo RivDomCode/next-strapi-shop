@@ -3,7 +3,6 @@
     font-size: 2rem;
     height: 60vh;
     display: flex;
-
     margin:0 2rem 4rem 2rem;
     position: relative;
     overflow: hidden;
@@ -15,23 +14,34 @@
 
 
 .left{
-    color: var(--black);
+    color: var(--white);
     font-size: 5rem;
     z-index: 10;
     position: absolute;
     top:50%;
     left: 5%;
-    cursor:pointer
+    cursor:pointer;
+    border:2px solid var(--white);
+    background-color: lightgray;
+    border-radius: 50px;
 }
 
 .right{
-    color: var(--black);
+    color: var(--white);
     font-size: 5rem;
     z-index: 10;
     position: absolute;
     top:50%;
     right:5%;
-    cursor:pointer
+    cursor:pointer;
+    border:2px solid var(--white);
+    background-color: lightgray;
+    border-radius: 50px;
+}
+
+.left:hover, .right:hover{
+    color: var(--grey);
+    transform: scale(1.08);
 }
 
 .slide{
@@ -42,4 +52,8 @@
 
 .slide h1{
     margin:2rem ;
+}
+
+.slide img{
+    filter: grayscale(.7) brightness(1.1);
 }
