@@ -1,74 +1,45 @@
 .carrousel{
-    /* display: flex; */
+    color: var(--black);
+    font-size: 2rem;
+    height: 60vh;
+    display: flex;
+
+    margin:0 2rem 4rem 2rem;
     position: relative;
-    margin-top: 8rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 2px 2px 7px var(--grey);
 }
 
-.leftArrow{
-    position: absolute;
-    color:var(--primary);
+
+.left{
+    color: var(--black);
     font-size: 5rem;
-    top: 50%;
-    left: 2%;
     z-index: 10;
-    cursor: pointer;
-}
-
-.rightArrow{
     position: absolute;
-    color:var(--primary);
+    top:50%;
+    left: 5%;
+    cursor:pointer
+}
+
+.right{
+    color: var(--black);
     font-size: 5rem;
-    top: 50%;
-    right: 2%;
     z-index: 10;
-    cursor: pointer;
+    position: absolute;
+    top:50%;
+    right:5%;
+    cursor:pointer
 }
-
-.leftArrow, .rightArrow:hover{
-    color: var(--terciary);
-}
-
-/* Carrousel Slides */
 
 .slide{
-    width: 80vw;
-    flex-direction: column;
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 8rem;
-    position: relative;
-    color: var(--white);
-}
-
-.active{
-    display: block;
-}
-
-.slide img{
-    border-radius: 5px;
-    box-shadow: 1rem 1rem 5rem var(--grey);
-    filter: grayscale(.8) brightness(55%);
-    transition: filter .3s linear;
-    background-color: transparent;
-}
-
-.slide img:hover{
-    filter:grayscale(.8)  brightness(85%);
-}
-
-.slide h3{
-    font-size: 2.5rem;
     text-align: center;
-    position: absolute;
-    top: 5%;
-    right: 45%;
-    z-index: 10;
+    color: var(--black);
+    height: 100%;
 }
 
-.slide h4{
-    font-size: 2rem;
-    text-align: center;
-    position: absolute;
-    bottom: 3%;
-    left: 5%;
+.slide h1{
+    margin:2rem ;
 }

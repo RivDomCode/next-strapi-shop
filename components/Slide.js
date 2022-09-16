@@ -1,16 +1,14 @@
-import Image from "next/image";
 import styles from "../styles/Carrousel.module.css";
+import Image from "next/image";
 
-const Slide = ( { slide } ) =>{
-
-    const  { name, url, text } = slide
-
+const Slide = ({ slide }) => {
+   const { name, url, text } = slide
   return (
-    <div className={styles.slide}>
-         <h3> {name}</h3>
-         <Image src={url} layout="intrinsic" width={700} height={450} alt={name}/>
-        <h4>  {text}</h4>
-    </div>
+    <article className={styles.slide}>
+       <h1>{name}</h1>
+       <Image src={url} layout="intrinsic" width={800} height={350} alt={name}/>
+       <p>{text}</p>
+    </article>
   )
 }
 

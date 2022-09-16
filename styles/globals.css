@@ -34,3 +34,23 @@
   font-family: var(--titlesFont);
   text-transform: uppercase;
 }
+
+/* Carrousel */
+
+[class*="carrouselItem"]{
+    width: 100vw;
+    transition: 1s linear;
+    opacity: 0;
+    transition-duration: 1s ease;
+    position: absolute;
+    font-size:5rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+[class*="active"]{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+  display: block;
+}

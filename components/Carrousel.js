@@ -1,41 +1,41 @@
-import { useState } from "react";
 import styles from "../styles/Carrousel.module.css";
+import Image from "next/image";
+import { GoChevronRight, GoChevronLeft } from "react-icons/go";
+import { useState } from "react";
+import { carrouselData } from "./carrouselData";
 import Slide from "./Slide";
-import { sliderData } from "./sliderData";
-import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 
 const Carrousel = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide === 5 - 1 ? 0 : currentSlide + 1)
-  }
+const [currentItem, setCurrentItem] = useState(0);
+const length = carrouselData.length;
 
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? 4 : currentSlide - 1)
-  }
+const nextSlide = () =>{
+    setCurrentItem(currentItem === length - 1 ? 0 : currentItem + 1);
+}
 
+const prevSlide = () =>{
+    setCurrentItem(currentItem === 0 ? length - 1 : currentItem - 1);
+}
 
-  console.log(currentSlide)
 
   return (
-    <div className={styles.carrousel}>
-      <h2 className="heading">Our Services</h2>
-     <GoChevronRight className={styles.rightArrow} onClick={nextSlide}/>
-      {sliderData.map((slide, index) => {
+    <section className={styles.carrousel}>
+       <GoChevronLeft className={styles.left} onClick={prevSlide}/>
+       {carrouselData.map((slide, index) => {
 
-        return(
-          <div  key={index} className={ index === currentSlide ? 'slide active' : 'slide'}>
-          {
-            index === currentSlide && (
-            <Slide slide={slide} />
-            )
-          }
-          </div>
+return(
+  <div  key={index} className={index === currentItem ? 'carrouselItem active' : "carrouselItem" }>
+    {
+        index === currentItem && (
+            <Slide slide={slide}/>
         )
-      })}
-          <GoChevronLeft className={styles.leftArrow} onClick={prevSlide}/>
-    </div>
+    }
+  </div>
+)
+})}
+      <GoChevronRight className={styles.right} onClick={nextSlide}/>
+    </section>
   );
 };
 

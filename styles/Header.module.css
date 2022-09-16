@@ -28,6 +28,7 @@
 
 .shopName{
     font-size: 3rem;
+    font-family: var(--titlesFont);
     color: var(--terciary);
 }
 

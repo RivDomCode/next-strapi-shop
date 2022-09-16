@@ -27,8 +27,8 @@ export default function Home() {
 
         </div>
       </main>
-      <Carrousel/>
       <HomeBody/>
+      <Carrousel/>
     </Layout>
   );
 }
