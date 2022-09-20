@@ -1,13 +1,28 @@
 import Image from "next/image";
+import { useState } from "react";
 import Layout from "../../components/Layout";
 import styles from "../../styles/ShopArticle.module.css";
 
-const PlantDetail = ({ plantContent }) => {
-  console.log(plantContent);
+const PlantDetail = ({ plantContent, addToCart }) => {
 
-  const { name, plantimage, description, price } = plantContent;
-
+  const { name, plantimage, description, price, id } = plantContent;
   const [plantimageUrl] = plantimage;
+
+  const [quantity, setQuantity] = useState(0);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const selectedProduct = {
+      id,
+      img: plantimageUrl.url,
+      name,
+      price,
+      quantity
+    }
+
+    addToCart(selectedProduct)
+  }
 
   return (
     <Layout page={name}>
@@ -26,13 +41,17 @@ const PlantDetail = ({ plantContent }) => {
             <h2 className={styles.detailName}>{name}</h2>
             <p className={styles.detailDescription}>{description}</p>
             <p className={styles.detailPrice}>Price: {price}€</p>
-            <form className={styles.form}>
+            <form className={styles.form} onSubmit={handleSubmit}>
               <label>Quantity</label>
 
-              <select>
+              <select
+                value={quantity}
+                onChange={ e => setQuantity(parseInt(e.target.value))}
+              >
                 <option value="">-- Select --</option>
                 <option value="1">1</option>
-                <option value="2">3</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
                 <option value="6">6</option>

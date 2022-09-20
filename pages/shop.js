@@ -4,8 +4,6 @@ import styles  from "../styles/Shop.module.css"
 
 const Shop = ( {shopArticles} ) => {
 
-  console.log(shopArticles)
-
   return (
     <Layout page="shop">
       <main className="container">

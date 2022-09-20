@@ -1,0 +1,11 @@
+.cart{
+    display: grid;
+    gap: 4rem;
+}
+
+@media( min-width: 768px){
+    .cart{
+        grid-template-columns: 3fr 2fr;
+
+    }
+}

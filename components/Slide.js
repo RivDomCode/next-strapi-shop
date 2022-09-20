@@ -6,7 +6,7 @@ const Slide = ({ slide }) => {
   return (
     <article className={styles.slide}>
        <h1>{name}</h1>
-       <Image src={url} layout="intrinsic" width={800} height={350} alt={name}/>
+       <Image src={url} layout="intrinsic" width={700} height={350} alt={name}/>
        <p>{text}</p>
     </article>
   )

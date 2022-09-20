@@ -21,9 +21,9 @@
     align-items: center;
 }
 
-.logo span{
+.leaf{
     color: var(--secondary);
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .shopName{
@@ -36,6 +36,7 @@
     display: flex;
     justify-content: space-around;
     margin-right: 1.8rem;
+    align-items: center;
 }
 
 .linkPages a{
@@ -53,9 +54,20 @@
     color: var(--secondary);
 }
 
+.shoppingCart{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.shoppingCart:hover{
+    color: var(--white);
+    transform: scale(1.08);
+}
 
 @media(min-width: 1286px) {
     .header{
-        padding: 1rem 35rem;
+        padding: 1rem 5rem;
     }
 }
