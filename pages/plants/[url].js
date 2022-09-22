@@ -73,6 +73,7 @@ export async function getServerSideProps({ query: { url } }) {
 
   const urlPlant = `${process.env.API_URL}/plants?url=${url}`;
   const resp = await fetch(urlPlant);
+  console.log(resp);
   const plantContent = await resp.json();
 
   return {

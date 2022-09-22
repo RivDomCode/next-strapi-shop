@@ -1,7 +1,13 @@
-import { useEffect, useState } from 'react'
+import {
+  useEffect,
+  useState
+} from 'react'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({
+  Component,
+  pageProps
+}) {
 
   const [cart, setCart] = useState([]);
 
@@ -14,12 +20,12 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart))
   }, [cart]);
-  
+
 
   const addToCart = (product) => {
-    if(cart.some(article => article.id === product.id)) {
-      const updatedCart =  cart.map((article) => {
-        if(article.id === product.id) {
+    if (cart.some(article => article.id === product.id)) {
+      const updatedCart = cart.map((article) => {
+        if (article.id === product.id) {
           article.quantity = product.quantity
         }
         return article
@@ -30,7 +36,40 @@ function MyApp({ Component, pageProps }) {
     }
   }
 
-  return <Component {...pageProps} cart={cart} addToCart={addToCart} />
+  const updateQuantity = product => {
+    const updatedCart = cart.map((article) => {
+
+      if (article.id === product.id) {
+        article.quantity = product.quantity
+      }
+
+      return article
+    })
+    setCart(updatedCart)
+  }
+
+  const removeArticle = id => {
+    const updatedCart = cart.filter(article => article.id !== id);
+    setCart(updatedCart)
+  }
+
+  return <Component {
+    ...pageProps
+  }
+  cart = {
+    cart
+  }
+  addToCart = {
+    addToCart
+  }
+  updateQuantity = {
+    updateQuantity
+  }
+
+  removeArticle= {
+    removeArticle
+  }
+  />
 }
 
 export default MyApp
