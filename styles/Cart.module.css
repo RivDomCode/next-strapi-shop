@@ -1,6 +1,35 @@
 .cart{
     display: grid;
     padding: 3rem 4rem;
+    grid-template-columns: 3fr 2fr;
+}
+
+@media(max-width: 768px){
+    .cart{
+        grid-template-columns: 1fr;
+    }
+}
+
+.order{
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 4rem;
+    border-radius: 5px;
+    margin-left: 4rem;
+    height: 50%;
+    border: 2px solid var(--grey);
+    box-shadow: 0 1rem 2rem var(--grey);
+}
+
+.order h3{
+    border-bottom: 1px solid var(--terciary);
+    padding:1rem 0 1rem 0;
+}
+
+.order p{
+    margin-top: 2rem;
+    font-weight: 700;
+    color: var(--primary);
 }
 
 /* Cart article */
@@ -11,9 +40,11 @@
     gap: 4rem;
     align-items: center;
     font-size: 4rem;
-    border-bottom: 1px solid var(--terciary);
     padding: 3rem 4rem;
     position: relative;
+    border: 2px solid var(--grey);
+    box-shadow: 0 1rem 2rem var(--grey);
+    margin-bottom: 1rem;
 }
 
 .cartArticle p{
@@ -36,9 +67,7 @@
     gap:4rem
 }
 
-.price{
-    margin-bottom: 1rem
-}
+
 
 .quantity p, .price span, .subtotal{
     font-weight: 700;

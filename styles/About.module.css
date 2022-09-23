@@ -3,6 +3,9 @@
     grid-template-columns: repeat(1, 1fr);
     padding: 5rem 12rem;
     min-height: 75vh;
+    border: 2px solid var(--grey);
+    box-shadow: 0 1rem 2rem var(--grey);
+    margin-bottom: 4rem;
 }
 
 
