@@ -12,7 +12,10 @@ const { content, images, published_at, title} = blogEntryContent;
     <main className='container'>
         <h1 className='heading'>{title}</h1>
         <article className={styles.detail}>
-        <Image layout="responsive" height={200} width={400} alt="post-img" src={images.url} />
+            <div className={styles.detailImg}>
+            <Image layout="intrinsic" height={300} width={600} alt="post-img" className={styles.detailImg} src={images.url} />
+
+            </div>
         <div className={styles.content}>
             <p className={styles.date}>
                 {formatDate(published_at)}

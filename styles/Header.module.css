@@ -6,6 +6,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-image: linear-gradient(to right bottom, rgba(39, 75, 54, .85), rgba(39, 75, 54, .99)
     ), url(../public/img/grey-gdccef0896_640.png);
     background-size: cover;
@@ -30,6 +31,7 @@
     font-size: 3rem;
     font-family: var(--titlesFont);
     color: var(--terciary);
+    cursor: pointer;
 }
 
 .linkPages{
@@ -37,6 +39,30 @@
     justify-content: space-around;
     margin-right: 1.8rem;
     align-items: center;
+}
+
+.menu{
+    display: none;
+}
+
+@media(max-width: 600px) {
+    .linkPages{
+        display: none;
+    }
+
+    /* Mobile menu */
+.menu{
+    display: block;
+    color: var(--secondary);
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.menu:hover{
+    color: var(--white);
+    transform: scale(1.08);
+}
+
 }
 
 .linkPages a{
@@ -71,3 +97,5 @@
         padding: 1rem 5rem;
     }
 }
+
+

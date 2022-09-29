@@ -34,8 +34,8 @@ const { img, name, price, quantity, id } = cartArticle;
                 <option value="8">8</option>
               </select>
             </div>
-            <p className={styles.price}><span>Price:</span> €{price}</p>
-            <p className={styles.subtotal}>Subtotal: €<span>{price * quantity}</span></p>
+            <p className={styles.price}><span>Price:</span> {price}€</p>
+            <p className={styles.subtotal}>Subtotal: <span>{price * quantity}€</span></p>
         </div>
         <button type="button" className={styles.remove} onClick={()=> removeArticle(id)}>x</button>
     </div>

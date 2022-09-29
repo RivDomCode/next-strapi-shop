@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
 :root {
   --primary:#274B36;
-  --secondary:#EF7420;
+  --secondary:#F4A442;;
   --terciary:#81968A;
   --grey: #F4F9F9;
   --black: #000;
@@ -9,6 +9,8 @@
   --titlesFont:"Raleway", sans-serif, impact;
   --textFont:"Roboto",sans-serif, impact
 }
+
+/* #E3C770; */
 
 * {
   box-sizing: border-box;

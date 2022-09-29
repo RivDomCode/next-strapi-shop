@@ -4,12 +4,10 @@
     display: flex;
     flex-direction: row;
     max-width: 190rem;
-    box-shadow: 1px 1px 3px lightgray;
-    background-image: linear-gradient(to right bottom, rgba(39, 75, 54, .85), rgba(39, 75, 54, .99)
-    ), url(../public/img/grey-gdccef0896_640.png);
     background-size: cover;
     margin: 0 auto;
     margin-top: 2rem;
+    padding: 1rem;
 }
 
 @media(max-width: 868px) {
@@ -19,7 +17,7 @@
 
     .hero{
         width: 100%;
-        height: 100%;
+        height: 100%
 
     }
 
@@ -27,11 +25,12 @@
         display: none;
         width: 0%;
     }
+
 }
 
 @media(max-width: 584px){
     .home{
-        height: 100vh;
+        height: 60vh;
     }
     .mainText, .secondaryText{
         padding: none;
@@ -43,14 +42,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--white);
-    font-size: 2.8rem;
+    color: var(--primary);
+    font-size: 3rem;
     width: 100%;
     height: 100%;
 }
 
 .mainText{
-    font-size: 2.2rem;
+    font-size: 2.7rem;
     margin-top: 8rem;
     padding: 2rem;
     text-align: center;
@@ -63,32 +62,11 @@
     text-align: center;
 }
 
-.heroBtn{
-    background-color: var(--secondary);
-    border: none;
-    border-radius: 1rem;
-    padding: 1.2rem;
-    margin-top: 4rem;
-    cursor: pointer;
-}
-
-.heroBtn a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: var(--white);
-    text-transform: uppercase;
-}
-
-.heroBtn:hover{
-    background-color:rgb(245, 98, 0);
-}
-
 .heroImg{
-    background: url(../public/img/heroImg.jpg) no-repeat center;
+    background: url(../public/img/pexels-julia-kuzenkov-1974508.jpg) no-repeat center; /*Foto de Julia Kuzenkov en Pexels*/
     background-size: cover;
     width: 100%;
     border-radius: 5px;
-    filter: grayscale(.9) brightness(1) drop-shadow(16px 5px 20px var(--terciary));
 }
 
 /* Home Body */
@@ -97,29 +75,37 @@
     color: var(--primary);
     height: 100%;
     display: flex;
-    padding: 8rem 6rem;
+    padding: 1rem;
     justify-content: space-around;
     align-items: center;
     max-width: 260rem;
-    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .service{
-    display: flex;
-    flex-direction: column;
-    padding: 4rem;
-    text-align: center;
+    margin: 1.2rem;
 }
 
-.service span{
+.service a{
+    display: flex;
+    font-size: 1.8rem;
+    color: var(--primary);
+    text-decoration: none;
+    flex-direction: column;
+    padding: 1.2rem;
+    text-align: center;
+    margin: .5;
+}
+
+.serviceIcon{
     font-size:4.5rem;
     text-align: center;
-width: 8rem;
-height: 8rem;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: auto;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     background-color: var(--primary);
     border-radius: 50%;
     color: var(--white);

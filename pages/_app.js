@@ -2,6 +2,7 @@ import {
   useEffect,
   useState
 } from 'react'
+import { AppProvider } from '../context/AppContext';
 import '../styles/globals.css'
 
 function MyApp({
@@ -9,8 +10,22 @@ function MyApp({
   pageProps
 }) {
 
-  const [cart, setCart] = useState([]);
+  //MobileMenu
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const openMenu = () =>{
+    setIsMenuOpen(true);
+    console.log("open")
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
+  //Shopping cart
+
+  const [cart, setCart] = useState([]);
   useEffect(() => {
     const cartLS = JSON.parse(localStorage.getItem('cart')) ?? [];
     setCart(cartLS)
@@ -53,7 +68,8 @@ function MyApp({
     setCart(updatedCart)
   }
 
-  return <Component {
+  return <AppProvider>
+<Component {
     ...pageProps
   }
   cart = {
@@ -69,7 +85,18 @@ function MyApp({
   removeArticle= {
     removeArticle
   }
+
+  openMenu= {
+    openMenu
+  }
+
+  closeMenu = {
+    closeMenu
+  }
+
+  isMenuOpen={isMenuOpen}
   />
+  </AppProvider>
 }
 
 export default MyApp

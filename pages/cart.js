@@ -28,7 +28,14 @@ const Cart = ( {cart, updateQuantity, removeArticle} ) => {
 
             <div className={styles.order}>
                 <h3>Your Order</h3>
-                <p>Total price: {total}</p>
+                {
+                  total > 0 ? (
+                    <p> Total price: {total}€</p>
+                  ) : (
+                    <span> - Your shopping cart is empty - </span>
+                  )
+                }
+
             </div>
         </main>
     </Layout>

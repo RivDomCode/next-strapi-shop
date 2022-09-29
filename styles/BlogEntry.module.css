@@ -67,6 +67,21 @@
     margin-bottom: 2rem;
 }
 
+.detailImg{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--grey);
+    box-shadow: 0 1rem 2rem var(--grey);
+    padding: 2rem 0 2rem 0;
+}
+
+.detailImg div{
+border-radius: 50px;
+border: 2px solid var(--grey);
+box-shadow: 0 1rem 2rem var(--grey);
+}
+
 .textContent{
     white-space:pre-wrap;
+    margin-top: 2rem;
 }
