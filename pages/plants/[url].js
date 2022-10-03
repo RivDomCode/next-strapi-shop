@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Layout from "../../components/Layout";
+import ModalProductAdded from "../../components/ModalProductAdded";
 import styles from "../../styles/ShopArticle.module.css";
 
 const PlantDetail = ({ plantContent, addToCart }) => {
@@ -9,6 +10,8 @@ const PlantDetail = ({ plantContent, addToCart }) => {
   const [plantimageUrl] = plantimage;
 
   const [quantity, setQuantity] = useState(0);
+
+  const [modalProductAdded, setModalProductAdded] = useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,14 +23,17 @@ const PlantDetail = ({ plantContent, addToCart }) => {
       price,
       quantity
     }
-
-    addToCart(selectedProduct)
+    addToCart(selectedProduct);
+    setModalProductAdded(true);
   }
 
   return (
     <Layout page={name}>
       <main className="container">
         <div className={styles.detailContainer}>
+          {
+            modalProductAdded && <ModalProductAdded setModalProductAdded={setModalProductAdded}/>
+          }
           <div className={styles.image}>
             <Image
               src={plantimageUrl.url}

@@ -2,7 +2,6 @@ import {
   useEffect,
   useState
 } from 'react'
-import { AppProvider } from '../context/AppContext';
 import '../styles/globals.css'
 
 function MyApp({
@@ -68,13 +67,15 @@ function MyApp({
     setCart(updatedCart)
   }
 
-  return <AppProvider>
-<Component {
+
+  return      <Component {
     ...pageProps
   }
+
   cart = {
     cart
   }
+
   addToCart = {
     addToCart
   }
@@ -96,7 +97,7 @@ function MyApp({
 
   isMenuOpen={isMenuOpen}
   />
-  </AppProvider>
+
 }
 
 export default MyApp

@@ -14,7 +14,7 @@ const Cart = ( {cart, updateQuantity, removeArticle} ) => {
 
 
   return (
-    <Layout page="shopping-cart">
+    <Layout page="shopping-cart" >
         <h2 className="heading">Shopping Cart</h2>
         <main className={`${styles.cart} container`}>
           <div>

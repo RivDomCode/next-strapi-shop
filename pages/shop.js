@@ -5,7 +5,7 @@ import styles  from "../styles/Shop.module.css"
 const Shop = ( {shopArticles} ) => {
 
   return (
-    <Layout page="shop">
+    <Layout page="shop" >
       <main className="container">
         <h2 className="heading">
           OUR PLANT SELeCTION

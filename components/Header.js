@@ -1,14 +1,9 @@
 import styles from "../styles/Header.module.css";
 import Link  from "next/link";
-import { GiLindenLeaf, GiShoppingCart, GiHamburgerMenu } from "react-icons/gi";
-import { useContext } from "react";
-import { AppContext } from "../context/AppContext";
+import { GiLindenLeaf, GiShoppingCart } from "react-icons/gi";
 
 
-export const Header = () => {
-
-
-  const { openMenu } = useContext(AppContext)
+export const Header = (  ) => {
 
   return (
     <nav className={styles.header}>
@@ -23,9 +18,7 @@ export const Header = () => {
         <Link href="cart">
          <GiShoppingCart className={styles.shoppingCart}/>
         </Link>
-
       </div>
-        <GiHamburgerMenu className={styles.menu}  onClick={openMenu}/>
     </nav>
   );
 };

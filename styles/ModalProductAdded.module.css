@@ -1,0 +1,62 @@
+.modal{
+    border: 2px solid var(--grey);
+    box-shadow: 0 1rem 2rem var(--grey);
+    height: 20rem;
+    width: 50rem;
+    place-items: center;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--white);
+    opacity: 0.90;
+}
+
+.modal p{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    font-weight: 500;
+}
+
+.check{
+    color: var(--primary);
+    font-size: 4rem;
+    display: grid;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: .7rem;
+    padding: .2rem;
+    border: 1px solid var(--terciary);
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.modal button {
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: block;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .6rem .8rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+.modal button:hover{
+    background-color:#3b865a;
+}

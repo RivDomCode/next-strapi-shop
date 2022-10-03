@@ -46,23 +46,15 @@
 }
 
 @media(max-width: 600px) {
-    .linkPages{
+    .logo {
         display: none;
     }
 
-    /* Mobile menu */
-.menu{
-    display: block;
-    color: var(--secondary);
-    cursor: pointer;
-    font-size: 3rem;
-}
-
-.menu:hover{
-    color: var(--white);
-    transform: scale(1.08);
-}
-
+    .linkPages {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
 }
 
 .linkPages a{
