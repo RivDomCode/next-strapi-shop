@@ -9,19 +9,6 @@ function MyApp({
   pageProps
 }) {
 
-  //MobileMenu
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const openMenu = () =>{
-    setIsMenuOpen(true);
-    console.log("open")
-  }
-
-  const closeMenu = () => {
-    setIsMenuOpen(false)
-  }
-
   //Shopping cart
 
   const [cart, setCart] = useState([]);
@@ -87,15 +74,6 @@ function MyApp({
     removeArticle
   }
 
-  openMenu= {
-    openMenu
-  }
-
-  closeMenu = {
-    closeMenu
-  }
-
-  isMenuOpen={isMenuOpen}
   />
 
 }

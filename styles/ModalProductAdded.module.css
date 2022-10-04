@@ -27,7 +27,7 @@
     margin-top: .7rem;
     padding: .2rem;
     border: 1px solid var(--terciary);
-    animation: fadeInAnimation ease 1.5s;
+    animation: fadeInAnimation ease 1.8s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

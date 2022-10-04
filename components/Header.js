@@ -13,9 +13,9 @@ export const Header = (  ) => {
       </div>
       <div className={styles.linkPages}>
         <Link href="/">Home</Link>
-        <Link href="blog">Blog</Link>
-        <Link href="shop ">Shop</Link>
-        <Link href="cart">
+        <Link href="/blog">Blog</Link>
+        <Link href="/shop ">Shop</Link>
+        <Link href="/cart">
          <GiShoppingCart className={styles.shoppingCart}/>
         </Link>
       </div>

@@ -11,7 +11,7 @@ const PlantDetail = ({ plantContent, addToCart }) => {
 
   const [quantity, setQuantity] = useState(0);
 
-  const [modalProductAdded, setModalProductAdded] = useState(true);
+  const [modalProductAdded, setModalProductAdded] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -81,6 +81,8 @@ export async function getServerSideProps({ query: { url } }) {
   const resp = await fetch(urlPlant);
   console.log(resp);
   const plantContent = await resp.json();
+
+  
 
   return {
     props: {

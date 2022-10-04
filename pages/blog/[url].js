@@ -4,7 +4,6 @@ import { formatDate } from '../../helpers/formatDate';
 import styles from "../../styles/BlogEntry.module.css"
 
 const BlogEntryContent = ( { blogEntryContent } ) => {
-
 const { content, images, published_at, title} = blogEntryContent;
 
   return (
@@ -13,7 +12,7 @@ const { content, images, published_at, title} = blogEntryContent;
         <h1 className='heading'>{title}</h1>
         <article className={styles.detail}>
             <div className={styles.detailImg}>
-            <Image layout="intrinsic" height={300} width={600} alt="post-img" className={styles.detailImg} src={images.url} />
+            <Image layout="intrinsic" height={500} width={600} alt="post-img" className={styles.detailImg} src={images.url} />
 
             </div>
         <div className={styles.content}>
@@ -36,10 +35,9 @@ export async function getServerSideProps ({query: {url}}){ //asi tendriamos el u
     const resp = await fetch(urlBlog);
     const blogEntryContent = await resp.json();
 
-
     return {
         props:{
-            blogEntryContent: blogEntryContent[0]
+            blogEntryContent: blogEntryContent[0],
         }
     }
 }

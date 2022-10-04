@@ -10,7 +10,7 @@ const Cart = ( {cart, updateQuantity, removeArticle} ) => {
   useEffect(() => {
     const totalUpdated = cart.reduce((total, product) => total +(product.quantity * product.price), 0)
     setTotal(totalUpdated)
-  }, [cart])
+  }, [cart]);
 
 
   return (
