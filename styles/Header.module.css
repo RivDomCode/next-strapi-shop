@@ -72,6 +72,11 @@
     color: var(--secondary);
 }
 
+.cartIcon{
+    display: flex;
+    align-items: center;
+}
+
 .shoppingCart{
     font-weight: bolder;
     font-size: 3rem;

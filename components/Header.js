@@ -4,7 +4,7 @@ import { GiLindenLeaf, GiShoppingCart } from "react-icons/gi";
 
 
 export const Header = ( { articlesInCart}) => {
-  
+
   return (
     <nav className={styles.header}>
       <div className={styles.logo}>
@@ -14,10 +14,13 @@ export const Header = ( { articlesInCart}) => {
       <div className={styles.linkPages}>
         <Link href="/">Home</Link>
         <Link href="/shop ">Shop</Link>
+        <div className={styles.cartIcon}>
         <Link href="/cart">
          <GiShoppingCart className={styles.shoppingCart}/>
         </Link>
         <span>{articlesInCart}</span>
+        </div>
+
       </div>
     </nav>
   );

@@ -17,8 +17,7 @@
 
     .hero{
         width: 100%;
-        height: 100%
-
+        height: 100%;
     }
 
     .heroImg{
@@ -30,7 +29,7 @@
 
 @media(max-width: 584px){
     .home{
-        height: 60vh;
+        height: 70vh;
     }
     .mainText, .secondaryText{
         padding: none;
@@ -49,7 +48,6 @@
 }
 
 .hero a{
-    text-decoration: none;
     text-decoration: none;
     margin-top: 1rem;
     display: block;
