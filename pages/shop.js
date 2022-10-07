@@ -1,19 +1,31 @@
 import Layout from '../components/Layout';
 import ShopArticle from '../components/ShopArticle';
-import styles  from "../styles/Shop.module.css"
+import styles  from "../styles/Shop.module.css";
+import ModalProductAdded from "../components/ModalProductAdded";
+import { useState } from "react";
 
-const Shop = ( {shopArticles} ) => {
+
+const Shop = ( {shopArticles, articlesInCart, addToCart} ) => {
+
+const { data } = shopArticles;
+const [modalProductAdded, setModalProductAdded] = useState(false);
+
 
   return (
-    <Layout page="shop" >
+    <Layout page="shop" articlesInCart={articlesInCart}>
       <main className="container">
         <h2 className="heading">
-          OUR PLANT SELeCTION
+          OUR PLANT SELECTION
         </h2>
+
+
         <div className={styles.shop}>
+        {
+            modalProductAdded && <ModalProductAdded setModalProductAdded={setModalProductAdded}/>
+          }
           {
-            shopArticles.map(shopArticle => (
-              <ShopArticle key={shopArticle.id} shopArticle={shopArticle}/>
+            data?.map(shopArticle => (
+              <ShopArticle key={shopArticle.id} setModalProductAdded={setModalProductAdded} shopArticle={shopArticle} addToCart={addToCart}/>
             ))
           }
         </div>
@@ -24,7 +36,7 @@ const Shop = ( {shopArticles} ) => {
 }
 
 export async function getServerSideProps() {
-  const url =`${process.env.API_URL}/plants`;
+  const url =`${process.env.API_URL}/api/plants?populate=plantimage`;
   const apiresponse = await fetch(url);
   const shopArticles = await apiresponse.json();
 

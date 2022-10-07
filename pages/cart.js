@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import CartArticle from "../components/CartArticle";
 import { useEffect, useState } from "react";
 
-const Cart = ( {cart, updateQuantity, removeArticle} ) => {
+const Cart = ( {cart, updateQuantity, removeArticle, articlesInCart} ) => {
 
   const [total, setTotal] = useState(0);
 
@@ -14,7 +14,7 @@ const Cart = ( {cart, updateQuantity, removeArticle} ) => {
 
 
   return (
-    <Layout page="shopping-cart" >
+    <Layout page="shopping-cart" articlesInCart={articlesInCart} >
         <h2 className="heading">Shopping Cart</h2>
         <main className={`${styles.cart} container`}>
           <div>

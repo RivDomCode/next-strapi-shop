@@ -48,6 +48,31 @@
     height: 100%;
 }
 
+.hero a{
+    text-decoration: none;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--white);
+    background-color: var(--primary);
+    border: 1px solid var(--white);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+    letter-spacing: .2rem;
+    box-shadow: .1rem .1rem .8rem var(--terciary);
+}
+
+.hero a:hover{
+    background-color: var(--white);
+    color: var(--primary);
+}
+
 .mainText{
     font-size: 2.7rem;
     margin-top: 8rem;

@@ -54,6 +54,8 @@ function MyApp({
     setCart(updatedCart)
   }
 
+  const articlesInCart = cart.length;
+
 
   return      <Component {
     ...pageProps
@@ -73,6 +75,8 @@ function MyApp({
   removeArticle= {
     removeArticle
   }
+
+  articlesInCart={articlesInCart}
 
   />
 

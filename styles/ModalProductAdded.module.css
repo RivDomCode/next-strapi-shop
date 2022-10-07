@@ -3,11 +3,13 @@
     box-shadow: 0 1rem 2rem var(--grey);
     height: 20rem;
     width: 50rem;
-    place-items: center;
     position: fixed;
     z-index: 10;
     background-color: var(--white);
     opacity: 0.90;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal p{

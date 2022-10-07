@@ -1,39 +1,21 @@
 import Image from "next/image";
-import { useState } from "react";
 import Layout from "../../components/Layout";
-import ModalProductAdded from "../../components/ModalProductAdded";
 import styles from "../../styles/ShopArticle.module.css";
 
-const PlantDetail = ({ plantContent, addToCart }) => {
+const PlantDetail = ({ addToCart }) => {
 
-  const { name, plantimage, description, price, id } = plantContent;
-  const [plantimageUrl] = plantimage;
+  // const { name, plantimage, description, price, id } = plantContent;
+  // const [plantimageUrl] = plantimage;
 
-  const [quantity, setQuantity] = useState(0);
 
-  const [modalProductAdded, setModalProductAdded] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    const selectedProduct = {
-      id,
-      img: plantimageUrl.url,
-      name,
-      price,
-      quantity
-    }
-    addToCart(selectedProduct);
-    setModalProductAdded(true);
-  }
 
   return (
-    <Layout page={name}>
+    <Layout page="">
       <main className="container">
-        <div className={styles.detailContainer}>
-          {
-            modalProductAdded && <ModalProductAdded setModalProductAdded={setModalProductAdded}/>
-          }
+        {/* <div className={styles.detailContainer}>
+
           <div className={styles.image}>
             <Image
               src={plantimageUrl.url}
@@ -47,46 +29,23 @@ const PlantDetail = ({ plantContent, addToCart }) => {
             <h2 className={styles.detailName}>{name}</h2>
             <p className={styles.detailDescription}>{description}</p>
             <p className={styles.detailPrice}>Price: {price}€</p>
-            <form className={styles.form} onSubmit={handleSubmit}>
-              <label>Quantity</label>
 
-              <select
-                value={quantity}
-                onChange={ e => setQuantity(parseInt(e.target.value))}
-              >
-                <option value="">-- Select --</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-              </select>
-
-              <input type="submit" value="Add to Cart" />
-            </form>
           </div>
-        </div>
+        </div> */}
       </main>
     </Layout>
   );
 };
 
-export async function getServerSideProps({ query: { url } }) {
-  //asi tendriamos el url
-
-  const urlPlant = `${process.env.API_URL}/plants?url=${url}`;
-  const resp = await fetch(urlPlant);
-  console.log(resp);
-  const plantContent = await resp.json();
-
-  
+export async function getServerSideProps( datos) {
+  console.log("hola")
+  const resp = await fetch(`${process.env.API_URL}/api/plants?filters[url]=cool-plant&populate=plantimage`);
+  const { data } = await resp.json();
+  console.log(data, "hola")
 
   return {
     props: {
-      plantContent: plantContent[0],
+
     },
   };
 }
