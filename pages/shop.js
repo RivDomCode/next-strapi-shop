@@ -3,11 +3,13 @@ import ShopArticle from '../components/ShopArticle';
 import styles  from "../styles/Shop.module.css";
 import ModalProductAdded from "../components/ModalProductAdded";
 import { useState } from "react";
+import JSONDATA from "../data/plantData.json";
 
 
-const Shop = ( {shopArticles, articlesInCart, addToCart} ) => {
+const Shop = ( { articlesInCart, addToCart} ) => {
 
-const { data } = shopArticles;
+const plantData = JSONDATA;
+console.log(plantData)
 const [modalProductAdded, setModalProductAdded] = useState(false);
 
 
@@ -24,7 +26,7 @@ const [modalProductAdded, setModalProductAdded] = useState(false);
             modalProductAdded && <ModalProductAdded setModalProductAdded={setModalProductAdded}/>
           }
           {
-            data?.map(shopArticle => (
+            plantData.map(shopArticle => (
               <ShopArticle key={shopArticle.id} setModalProductAdded={setModalProductAdded} shopArticle={shopArticle} addToCart={addToCart}/>
             ))
           }
@@ -33,18 +35,6 @@ const [modalProductAdded, setModalProductAdded] = useState(false);
       </main>
     </Layout>
   )
-}
-
-export async function getServerSideProps() {
-  const url =`${process.env.API_URL}/api/plants?populate=plantimage`;
-  const apiresponse = await fetch(url);
-  const shopArticles = await apiresponse.json();
-
-  return {
-    props:{
-      shopArticles
-    }
-  }
 }
 
 export default Shop;

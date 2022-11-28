@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Distressed&display=swap');
 :root {
-  --primary:#274B36;
+  --primary:#5a9372;
   --secondary:#F4A442;;
   --terciary:#81968A;
   --grey: #F4F9F9;
   --black: #000;
   --white:#eee;
-  --titlesFont:"Raleway", sans-serif, impact;
-  --textFont:"Roboto",sans-serif, impact
+  --titlesFont:"Rubik distressed", sans-serif, impact;
+  --textFont:"Oswald",sans-serif, impact
 }
 
 /* #E3C770; */
@@ -35,24 +35,5 @@
   color: var(--primary);
   font-family: var(--titlesFont);
   text-transform: uppercase;
-}
-
-/* Carrousel */
-
-[class*="carrouselItem"]{
-    width: 100vw;
-    transition: 1s linear;
-    opacity: 0;
-    transition-duration: 1s ease;
-    position: absolute;
-    font-size:5rem;
-    display: flex;
-    margin: 0 auto;
-}
-
-[class*="active"]{
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
-  display: block;
+  padding-top: 6rem;
 }

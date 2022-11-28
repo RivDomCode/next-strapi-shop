@@ -7,8 +7,7 @@ import Link from "next/link";
 const ShopArticle = ( { shopArticle, addToCart, setModalProductAdded } ) => {
 
 
-  const { attributes, id} = shopArticle;
-  const { name, description, url, plantimage, price } = attributes;
+  const { id, name, description, img, plantimage, price } = shopArticle;
 
   const [quantity, setQuantity] = useState(0);
 
@@ -17,7 +16,7 @@ const ShopArticle = ( { shopArticle, addToCart, setModalProductAdded } ) => {
 
     const selectedProduct = {
       id,
-      img: plantimage.data.attributes.url,
+      img,
       name,
       price,
       quantity
@@ -29,7 +28,7 @@ const ShopArticle = ( { shopArticle, addToCart, setModalProductAdded } ) => {
   return (
     <article className={styles.shopArticle}>
       <div className={styles.articleImage}>
-      <Image src={plantimage.data.attributes.url} layout="fixed" width={200} height={200} alt={name}/>
+      <Image src={img} layout="fixed" width={200} height={200} alt={name}/>
       </div>
         <h2>{name}</h2>
         <p className={styles.description}>{description}€</p>

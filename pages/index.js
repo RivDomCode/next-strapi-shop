@@ -1,6 +1,4 @@
 import Link from "next/link";
-import About from "../components/About";
-import HomeBody from "../components/HomeBody";
 import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
 
@@ -25,8 +23,7 @@ export default function Home( {articlesInCart}) {
 
         </div>
       </main>
-      <HomeBody/>
-      <About/>
+
     </Layout>
   );
 }

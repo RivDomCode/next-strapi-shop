@@ -1,0 +1,129 @@
+[
+    {
+        "id":1,
+        "name":"Begonia surefire",
+        "img": "/img/begonia_surefire_cherry_cordial_co-ex_grande.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":12
+    },
+
+    {
+        "id":2,
+        "name":"Begonia white",
+        "img": "/img/begonia_surefire_white_co-ex_classic.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":18
+    },
+
+    {
+        "id":3,
+        "name":"Bubblegum grande",
+        "img": "/img/bubblegum_grande-new_container_rgb.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":10.4
+    },
+
+    {
+        "id:":4,
+        "name":"Calibrachoa superbells",
+        "img": "/img/calibrachoa_superbells_grape_punch_co-ex_classic.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":18
+    },
+
+    {
+        "id":5,
+        "name":"Calibrachoa tropical",
+        "img": "/img/calibrachoa_superbells_tropical_sunrise_eco_grande.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscin",
+        "price":18.8
+    },
+
+    {
+        "id:":6,
+        "name":"Calibrachoa yellow",
+        "img": "/img/calibrachoa_superbells_yellow_co-ex_grande.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":19
+    },
+
+    {
+        "id":7,
+        "name":"Ipomea sweet caroline",
+        "img": "/img/ipomoea_sweet_caroline_upside_key_lime_royale.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":12
+    },
+
+    {
+        "id":8,
+        "name":"Phaseolus dragons",
+        "img": "/img/phaseolus_dragons_tongue_grande.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":5.9
+    },
+
+    {
+        "id":9,
+        "name":"Plectranthus colorblaze",
+        "img": "/img/plectranthus_colorblaze_el_brighto_grande.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":14
+    },
+
+    {
+        "id":10,
+        "name":"Plectranthus grande",
+        "img": "/img/plectranthus_colorblaze_el_brighto_grande.jpg",
+        "description":"",
+        "price":19
+    },
+
+    {
+        "id":11,
+        "name":"Newli por",
+        "img": "/img/plectranthus_colorblaze_newly_noir_grande.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":25
+    },
+
+    {
+        "id":12,
+        "name":"Supertunia persimmon",
+        "img": "/img/supertunia_persimmon_grande.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":32
+    },
+
+    {
+        "id":13,
+        "name":"Tradescatia purple queen",
+        "img": "/img/tradescantia_purple_queen_grande.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":9.5
+    },
+
+    {
+        "id":14,
+        "name":"Zantedeschia love",
+        "img": "/img/zantedeschia_be_my_first_love_gallon.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":17
+    },
+
+    {
+        "id":15,
+        "name":"Squeez zass",
+        "img": "/img/zantedeschia_be_my_main_squeeze_gallon.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":3.2
+     },
+
+    {
+        "id":16,
+        "name":"Zantedeschia olsls",
+        "img": "/img/zantedeschia_be_my_main_squeeze_gallon.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum dolor elit. Aliquam tempus nisi nec neque facilisis placerat. Mauris eu porta ligula. Mauris pharetra sagittis odio, vel varius eros mattis vitae. Cras rhoncus in sapien at posuere. Phasellus magna libero, maximus sed mattis cursus, euismod ac nulla. Donec auctor porttitor egestas. Nam dui ipsum, eleifend eget sagittis efficitur, ornare sit amet metus. Sed molestie dignissim est, nec luctus metus placerat et. Morbi bibendum dui posuere velit lacinia suscipit. Morbi venenatis est purus. Aliquam erat volutpat. Aliquam sit amet lacinia risus. Duis sem odio, suscipit non malesuada non, rhoncus a ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lobortis commodo mauris in vehicula.",
+        "price":22
+    }
+]

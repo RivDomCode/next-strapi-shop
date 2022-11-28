@@ -11,6 +11,9 @@
     ), url(../public/img/grey-gdccef0896_640.png);
     background-size: cover;
     background-position: 50%;
+    position: fixed;
+    top: 0;
+    opacity: .9;
 }
 
 .logo{
@@ -39,6 +42,7 @@
     justify-content: space-around;
     margin-right: 1.8rem;
     align-items: center;
+    color: var(--white);
 }
 
 .menu{
@@ -60,7 +64,7 @@
 .linkPages a{
     padding: 1rem;
     text-decoration: none;
-    color: var(--terciary);
+    color: var(--white);
     font-weight: 500;
     font-size: 1.8rem;
     text-transform: uppercase;
