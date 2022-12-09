@@ -29,7 +29,7 @@
 
 @media(max-width: 584px){
     .home{
-        height: 70vh;
+        height: 92vh;
     }
     .mainText, .secondaryText{
         padding: none;
